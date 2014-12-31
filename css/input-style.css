@@ -1,0 +1,192 @@
+/*Check-box*/
+
+.input, .select {
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input {
+	margin: 10px 0;
+	cursor: pointer;
+	display: table;
+	vertical-align: middle;
+}
+
+.input span {
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.input.sm div {
+	width: 14px;
+	height: 14px;
+}
+
+.input.sm span {
+	font-size: 12px;
+	padding: 0 0 0 5px;
+}
+
+.input.md div {
+	width: 17px;
+	height: 17px;
+}
+
+.input.md span {
+	font-size: 14px;
+	padding: 0 0 0 8px;
+}
+
+.input.lg div {
+	height: 24px;
+	width: 24px;
+}
+
+.input.lg span {
+	font-size: 18px;
+	padding: 0 0 0 10px;
+}
+
+.input.checkbox.sm div {
+	background: url(../img/input/input-ico-sm.png) no-repeat;
+}
+
+.input.checkbox.md div {
+	background: url(../img/input/input-ico-md.png) no-repeat;
+}
+
+.input.checkbox.lg div {
+	background: url(../img/input/input-ico-lg.png) no-repeat;
+}
+
+.input.checkbox.sm:hover div {
+	background-position: -14px 0px;
+}
+
+.input.checkbox.md:hover div {
+	background-position: -17px 0px;
+}
+
+.input.checkbox.lg:hover div {
+	background-position: -24px 0px;
+}
+
+.input.checkbox.sm.active div {
+	background-position: -28px 0px;
+}
+
+.input.checkbox.md.active div {
+	background-position: -34px 0px;
+}
+
+.input.checkbox.lg.active div {
+	background-position: -48px 0px;
+}
+
+
+.input.radio.sm div {
+	background: url(../img/input/input-ico-sm.png) no-repeat;
+}
+
+.input.radio.md div {
+	background: url(../img/input/input-ico-md.png) no-repeat;
+}
+
+.input.radio.lg div {
+	background: url(../img/input/input-ico-lg.png) no-repeat;
+}
+
+.input.radio.sm:hover div {
+	background-position: -14px 0px;
+}
+
+.input.radio.md:hover div {
+	background-position: -17px 0px;
+}
+
+.input.radio.lg:hover div {
+	background-position: -24px 0px;
+}
+
+.input.radio.sm.active div {
+	background-position: -28px 0px;
+}
+
+.input.radio.md.active div {
+	background-position: -34px 0px;
+}
+
+.input.radio.lg.active div {
+	background-position: -48px 0px;
+}
+
+.select {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+}
+
+.select div.title {
+	padding: 5px 40px 5px 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.select:after {
+	content: '';
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: url(../img/input/select-arrow.png) center center no-repeat;
+}
+
+.select, .options {
+	border-radius: 6px;
+	border: solid 1px #336699;
+}
+
+.select .options {
+	display: block;
+	position: relative;
+	top: 27px;
+	background: #fff;
+	z-index: 999;
+}
+
+.select .options span {
+	display: block;
+	padding: 5px 40px 5px 10px;
+	cursor: pointer;
+}
+
+.select.sm {
+	font-size: 12px;
+	height: 24px;
+}
+
+.select.md {
+	font-size: 14px;
+	height: 26px;
+}
+
+.select.lg {
+	font-size: 18px;
+	height: 30px
+}
+
+.select .options span:first-child {
+	padding-top: 10px;
+}
+
+.select .options span:last-child {
+	padding-bottom: 10px;
+}
+
+.select .options span:hover {
+	background: rgba(51, 102, 153, 0.14);
+}
