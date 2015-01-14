@@ -127,19 +127,19 @@
 }
 
 /*SELECT*/
-.select {
+.input.select {
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
 }
 
-.select div.title {
+.input.select div.title {
 	padding: 5px 40px 5px 10px;
 	display: inline-block;
 	position: relative;
 }
 
-.select:after {
+.input.select:after {
 	content: '';
 	position: absolute;
 	right: 10px;
@@ -149,12 +149,12 @@
 	background: url(../img/input/select-arrow.png) center center no-repeat;
 }
 
-.select, .options {
+.input.select, .options {
 	border-radius: 6px;
 	border: solid 1px #336699;
 }
 
-.select .options {
+.input.select .options {
 	display: block;
 	position: relative;
 	top: 27px;
@@ -162,35 +162,35 @@
 	z-index: 999;
 }
 
-.select .options span {
+.input.select .options span {
 	display: block;
 	padding: 5px 40px 5px 10px;
 	cursor: pointer;
 }
 
-.select.sm {
+.input.select.sm {
 	font-size: 12px;
 	height: 24px;
 }
 
-.select.md {
+.input.select.md {
 	font-size: 14px;
 	height: 26px;
 }
 
-.select.lg {
+.input.select.lg {
 	font-size: 18px;
 	height: 30px
 }
 
-.select .options span:first-child {
+.input.select .options span:first-child {
 	padding-top: 10px;
 }
 
-.select .options span:last-child {
+.input.select .options span:last-child {
 	padding-bottom: 10px;
 }
 
-.select .options span:hover {
+.input.select .options span:hover {
 	background: rgba(51, 102, 153, 0.14);
 }
