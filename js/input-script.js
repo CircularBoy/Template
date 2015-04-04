@@ -47,5 +47,26 @@ $(document).ready(function() {
 		$(this).parent().prev().text($(this).text())
 	});
 
+  //PLACEHOLDER FOR NORMAL BROWSER
+  $('[data-placeholder]').each(function() {
+    var $elem = $(this)
+    if ($elem.val() == '') {
+      $elem.val($elem.attr('data-placeholder'))
+      $elem.addClass('placeholder')
+    }
+  })
+  $(document).on('focusin', '[data-placeholder]', function() {
+    var $elem = $(this)
+    if ($elem.hasClass('placeholder')) {
+      $elem.val('').removeClass('placeholder')
+    }
+  })
+  $('[data-placeholder]').focusout(function() {
+    var $elem = $(this)
+    if ($elem.val() == '' || $elem.val() == $elem.attr('data-placeholder')) {
+      $elem.val($elem.attr('data-placeholder'))
+      $elem.addClass('placeholder')
+    }
+  })
 });
 		

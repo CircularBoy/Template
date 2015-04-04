@@ -160,6 +160,8 @@
 	top: 27px;
 	background: #fff;
 	z-index: 999;
+  overflow: auto;
+  max-height: 235px;
 }
 
 .input.select .options span {
@@ -193,4 +195,36 @@
 
 .input.select .options span:hover {
 	background: rgba(51, 102, 153, 0.14);
+}
+
+/*TEXT*/
+.input.text {
+  display: inline-block;
+}
+
+.input.text input {
+  padding: 5px 40px 5px 10px;
+  border-radius: 6px;
+  border: solid 1px #336699;
+  color: #587f8b;
+}
+
+.input.text.sm input {
+  font-size: 12px;
+  height: 24px;
+}
+
+.input.text.md input {
+  font-size: 14px;
+  height: 26px;
+}
+
+.input.text.lg input {
+  font-size: 18px;
+  height: 30px
+}
+
+/*PLACEHOLDER*/
+.input input[data-placeholder] {
+  color: 
 }
